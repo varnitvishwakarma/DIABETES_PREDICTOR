@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1633613287441-3f72304088ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+        }
+
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.5);
+            overflow: hidden;
+            width: 100%;
+            position: fixed;
+            top: 0;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            text-align: center;
+            margin: 20px;
+            margin-top: 100px;
+        }
+
+        h1 {
+            font-size:60px;
+            text-align: center;
+            margin-top: 20px;
+            color: black; 
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .email-box, .social-box {
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .email-link, .social-link {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+
+        .email-icon, .social-icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        .social-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .social-links {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            margin: 5px;
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .social-icons {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        .facebook-box, .linkedin-box, .twitter-box, .github-box, .instagram-box, .leetcode-box {
+            width: 30%;
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        /* Style for the LeetCode icon */
+        .leetcode-icon {
+            width: 24px;
+            height: 24px;
+            fill: black;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a onclick="openHomePage()">Home</a>
+        <a onclick="openAboutPage()">About</a>
+        <a onclick="openContactPage()">Contact Us</a>
+    </div>
+    <div class="container">
+        <h1>CONTACT US</h1>
+    </div>
+
+    <div class="contact-info">
+        <div class="email-box">
+            <a href="mailto:varnitusar25@gmail.com" class="email-link">
+                <i class="fas fa-envelope email-icon"></i> varnitusar25@gmail.com
+            </a>
+        </div>
+    </div>
+
+    <div class="social-box">
+        <div class="linkedin-box">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/varnitviswakarma/" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin social-icon"></i> LinkedIn
+                </a>
+            </div>
+        </div>
+
+        <div class="instagram-box">
+            <div class="social-links">
+                <a href="https://www.instagram.com/varnitvishwakarma/" target="_blank" class="social-link">
+                    <i class="fab fa-instagram-square social-icon"></i> Instagram
+                </a>
+            </div>
+        </div>
+
+        <div class="github-box">
+            <div class="social-links">
+                <a href="https://github.com/varnitvishwakarma" target="_blank" class="social-link">
+                    <i class="fab fa-github-square social-icon"></i> GitHub
+                </a>
+            </div>
+        </div>
+
+        <div class="facebook-box">
+            <div class="social-links">
+                <a href="https://www.facebook.com/varnit.vishwakarma/" target="_blank" class="social-link">
+                    <i class="fab fa-facebook-square social-icon"></i> Facebook
+                </a>
+            </div>
+        </div>
+
+        <div class="twitter-box">
+            <div class="social-links">
+                <a href="https://twitter.com/varnitvishwkrma" target="_blank" class="social-link">
+                    <i class="fab fa-twitter-square social-icon"></i> Twitter
+                </a>
+            </div>
+        </div>
+
+        <div class="leetcode-box">
+            <div class="social-links">
+                <a href="https://leetcode.com/varnitvishwakarma/" target="_blank" class="social-link">
+                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="leetcode-icon"><title>LeetCode</title><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205-.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg> LeetCode
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openHomePage() {
+            var url = '/';
+            window.open(url, '_blank');
+        }
+        
+        function openAboutPage() {
+            var url = '/about';
+            window.open(url, '_blank');
+        }
+        
+    </script>
+</body>
+</html>
